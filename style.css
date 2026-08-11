@@ -122,9 +122,9 @@ button {
             var(--secondary)
         );
 
-    -webkit-background-clip: text;
-
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 
     animation: pulse 1.5s infinite;
 
