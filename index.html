@@ -5,172 +5,879 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Prasad Shetty | Portfolio</title>
+    <title>Prasad Shetty | Data Analyst</title>
+
+    <meta name="description"
+        content="Prasad Shetty - Data Analyst portfolio showcasing data analytics, SQL, Python, Power BI and Excel projects.">
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">PRASAD SHETTY</div>
+    <!-- LOADING SCREEN -->
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <div class="loader">
+
+        <div class="loader-content">
+
+            <div class="loader-logo">PS</div>
+
+            <div class="loader-line">
+                <span></span>
+            </div>
+
+            <p>Loading portfolio...</p>
+
+        </div>
+
+    </div>
+
+
+    <!-- CURSOR -->
+
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+
+    <!-- BACKGROUND -->
+
+    <div class="background-grid"></div>
+
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+
+    <!-- NAVIGATION -->
+
+    <header id="header">
+
+        <nav>
+
+            <a href="#home" class="logo">
+                PS<span>.</span>
+            </a>
+
+
+            <div class="nav-links">
+
+                <a href="#home" class="nav-link active">Home</a>
+
+                <a href="#about" class="nav-link">About</a>
+
+                <a href="#skills" class="nav-link">Skills</a>
+
+                <a href="#projects" class="nav-link">Projects</a>
+
+                <a href="#contact" class="nav-link">Contact</a>
+
+                <a href="Resume/resume.pdf" class="nav-resume" target="_blank">
+                    Resume
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+            </div>
+
+
+            <button class="menu-btn" id="menuBtn">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
         </nav>
+
     </header>
 
 
-    <section id="home" class="hero">
+    <!-- MOBILE MENU -->
 
-        <div class="hero-text">
+    <div class="mobile-menu" id="mobileMenu">
 
-            <p>Hello, I'm</p>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
 
-            <h1>Prasad Shetty</h1>
+    </div>
 
-            <h2>Executive Software Support</h2>
 
-            <p>
-                I transform data into meaningful insights
-                that help businesses make better decisions.
-            </p>
+    <!-- HERO -->
 
-            <div class="buttons">
-                <a href="#projects">View My Projects</a>
-                <a href="resume/resume.pdf" target="_blank">
-                    Download Resume
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <div class="availability reveal">
+
+                    <span class="status-dot"></span>
+
+                    Available for opportunities
+
+                </div>
+
+
+                <p class="hero-small reveal">
+                    HELLO, I'M
+                </p>
+
+
+                <h1 class="hero-title reveal">
+
+                    PRASAD
+                    <span>SHETTY</span>
+
+                </h1>
+
+
+                <div class="hero-role reveal">
+
+                    <span>I'M A </span>
+
+                    <span class="typing" id="typing"></span>
+
+                    <span class="cursor-text">|</span>
+
+                </div>
+
+
+                <p class="hero-description reveal">
+
+                    I transform raw data into meaningful insights,
+                    interactive dashboards and data-driven decisions.
+
+                </p>
+
+
+                <div class="hero-buttons reveal">
+
+                    <a href="#projects" class="btn btn-primary">
+
+                        View My Work
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                    <a href="Resume/resume.pdf"
+                        class="btn btn-secondary"
+                        target="_blank">
+
+                        Download Resume
+
+                        <i class="fa-solid fa-download"></i>
+
+                    </a>
+
+                </div>
+
+
+                <!-- SOCIAL -->
+
+                <div class="social-links reveal">
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="mailto:yourmail@example.com" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO VISUAL -->
+
+            <div class="hero-visual">
+
+                <div class="orb">
+
+                    <div class="orb-inner">
+
+                        <div class="data-symbol">
+
+                            <span>01</span>
+                            <span>10</span>
+                            <span>01</span>
+                            <span>11</span>
+                            <span>00</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card card-one">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <div>
+                        <strong>Analytics</strong>
+                        <small>Insights</small>
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card card-two">
+
+                    <i class="fa-solid fa-database"></i>
+
+                    <div>
+                        <strong>SQL</strong>
+                        <small>Data</small>
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card card-three">
+
+                    <i class="fa-solid fa-chart-pie"></i>
+
+                    <div>
+                        <strong>Power BI</strong>
+                        <small>Dashboards</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <a href="#about" class="scroll-indicator">
+
+                <span>SCROLL TO EXPLORE</span>
+
+                <i class="fa-solid fa-arrow-down"></i>
+
+            </a>
+
+        </section>
+
+
+        <!-- STATS -->
+
+        <section class="stats">
+
+            <div class="stat reveal">
+
+                <strong data-target="10">0</strong>
+
+                <span>+</span>
+
+                <p>Projects</p>
+
+            </div>
+
+
+            <div class="stat reveal">
+
+                <strong data-target="5">0</strong>
+
+                <span>+</span>
+
+                <p>Analytics Tools</p>
+
+            </div>
+
+
+            <div class="stat reveal">
+
+                <strong data-target="100">0</strong>
+
+                <span>%</span>
+
+                <p>Curiosity</p>
+
+            </div>
+
+
+            <div class="stat reveal">
+
+                <strong data-target="24">0</strong>
+
+                <span>/7</span>
+
+                <p>Learning Mindset</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section class="section about" id="about">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">01</span>
+
+                <p>ABOUT ME</p>
+
+                <h2>
+                    Turning data into
+                    <span>decisions.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-text reveal">
+
+                    <p class="large-text">
+
+                        I'm a data enthusiast passionate about
+                        discovering the stories hidden inside data.
+
+                    </p>
+
+
+                    <p>
+
+                        My approach combines analytical thinking,
+                        visualization and technology to transform
+                        complex datasets into clear, actionable insights.
+
+                    </p>
+
+
+                    <p>
+
+                        I enjoy working with SQL, Python, Excel and
+                        Power BI to clean, analyze and visualize data
+                        while continuously learning new technologies.
+
+                    </p>
+
+
+                    <a href="#contact" class="text-link">
+
+                        Let's connect
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+
+                <div class="about-card reveal">
+
+                    <div class="about-card-top">
+
+                        <span>DATA</span>
+
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+
+                    </div>
+
+
+                    <div class="chart">
+
+                        <div class="bar bar-1"></div>
+                        <div class="bar bar-2"></div>
+                        <div class="bar bar-3"></div>
+                        <div class="bar bar-4"></div>
+                        <div class="bar bar-5"></div>
+                        <div class="bar bar-6"></div>
+                        <div class="bar bar-7"></div>
+
+                    </div>
+
+
+                    <div class="chart-bottom">
+
+                        <span>DATA ANALYTICS</span>
+
+                        <span>↑ 87.4%</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+
+        <section class="section skills" id="skills">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">02</span>
+
+                <p>EXPERTISE</p>
+
+                <h2>
+                    Tools I use to
+                    <span>analyze.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon excel">
+                        <i class="fa-solid fa-table-cells"></i>
+                    </div>
+
+                    <h3>Excel</h3>
+
+                    <p>
+                        Data cleaning, formulas, PivotTables,
+                        dashboards and analysis.
+                    </p>
+
+                    <div class="skill-level">
+
+                        <div class="level-bar">
+                            <span style="width: 90%"></span>
+                        </div>
+
+                        <small>Advanced</small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon sql">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+
+                    <h3>SQL</h3>
+
+                    <p>
+                        Queries, joins, aggregations, CTEs,
+                        subqueries and data analysis.
+                    </p>
+
+                    <div class="skill-level">
+
+                        <div class="level-bar">
+                            <span style="width: 85%"></span>
+                        </div>
+
+                        <small>Advanced</small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon python">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+
+                    <h3>Python</h3>
+
+                    <p>
+                        Pandas, NumPy, data cleaning,
+                        analysis and visualization.
+                    </p>
+
+                    <div class="skill-level">
+
+                        <div class="level-bar">
+                            <span style="width: 75%"></span>
+                        </div>
+
+                        <small>Intermediate</small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon powerbi">
+                        <i class="fa-solid fa-chart-column"></i>
+                    </div>
+
+                    <h3>Power BI</h3>
+
+                    <p>
+                        Interactive dashboards, DAX,
+                        Power Query and visualization.
+                    </p>
+
+                    <div class="skill-level">
+
+                        <div class="level-bar">
+                            <span style="width: 85%"></span>
+                        </div>
+
+                        <small>Advanced</small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon git">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+
+                    <h3>Git & GitHub</h3>
+
+                    <p>
+                        Version control, repositories,
+                        collaboration and deployment.
+                    </p>
+
+                    <div class="skill-level">
+
+                        <div class="level-bar">
+                            <span style="width: 70%"></span>
+                        </div>
+
+                        <small>Intermediate</small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon analytics">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+
+                    <h3>Data Analytics</h3>
+
+                    <p>
+                        Exploratory analysis, KPIs,
+                        trends and business insights.
+                    </p>
+
+                    <div class="skill-level">
+
+                        <div class="level-bar">
+                            <span style="width: 88%"></span>
+                        </div>
+
+                        <small>Advanced</small>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+
+        <section class="section projects" id="projects">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">03</span>
+
+                <p>SELECTED WORK</p>
+
+                <h2>
+                    Things I've
+                    <span>built.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <article class="project-card reveal">
+
+                    <div class="project-image dashboard-one">
+
+                        <div class="fake-dashboard">
+
+                            <div class="dashboard-header"></div>
+
+                            <div class="dashboard-content">
+
+                                <div class="dashboard-chart"></div>
+
+                                <div class="dashboard-chart small"></div>
+
+                            </div>
+
+                        </div>
+
+                        <span class="project-number">01</span>
+
+                    </div>
+
+
+                    <div class="project-info">
+
+                        <div class="project-tags">
+
+                            <span>POWER BI</span>
+                            <span>SQL</span>
+
+                        </div>
+
+                        <h3>Business Intelligence Dashboard</h3>
+
+                        <p>
+                            Interactive dashboard designed to
+                            transform business data into actionable
+                            insights.
+                        </p>
+
+                        <a href="#" class="project-link">
+
+                            View project
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card reveal">
+
+                    <div class="project-image dashboard-two">
+
+                        <div class="fake-dashboard sales">
+
+                            <div class="dashboard-header"></div>
+
+                            <div class="sales-bars">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                        </div>
+
+                        <span class="project-number">02</span>
+
+                    </div>
+
+
+                    <div class="project-info">
+
+                        <div class="project-tags">
+
+                            <span>PYTHON</span>
+                            <span>PANDAS</span>
+
+                        </div>
+
+                        <h3>Sales Data Analysis</h3>
+
+                        <p>
+                            Exploratory data analysis identifying
+                            sales trends, customer behavior and
+                            business opportunities.
+                        </p>
+
+                        <a href="#" class="project-link">
+
+                            View project
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card reveal">
+
+                    <div class="project-image dashboard-three">
+
+                        <div class="fake-dashboard sql-project">
+
+                            <div class="sql-lines">
+
+                                <span>SELECT *</span>
+                                <span>FROM customers</span>
+                                <span>WHERE revenue</span>
+                                <span>&gt; 100000;</span>
+
+                            </div>
+
+                        </div>
+
+                        <span class="project-number">03</span>
+
+                    </div>
+
+
+                    <div class="project-info">
+
+                        <div class="project-tags">
+
+                            <span>SQL</span>
+                            <span>DATA ANALYSIS</span>
+
+                        </div>
+
+                        <h3>Customer Analytics</h3>
+
+                        <p>
+                            SQL-based analysis of customer behavior,
+                            segmentation and revenue patterns.
+                        </p>
+
+                        <a href="#" class="project-link">
+
+                            View project
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section class="section contact" id="contact">
+
+            <div class="contact-box reveal">
+
+                <span class="section-number">04</span>
+
+                <p class="contact-label">HAVE A PROJECT?</p>
+
+                <h2>
+                    Let's build something
+                    <span>meaningful.</span>
+                </h2>
+
+                <p class="contact-description">
+
+                    I'm always interested in discussing data,
+                    analytics, projects and new opportunities.
+
+                </p>
+
+
+                <a href="mailto:yourmail@example.com"
+                    class="btn btn-primary contact-btn">
+
+                    Get In Touch
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
                 </a>
-            </div>
-
-        </div>
-
-    </section>
 
 
-    <section id="about">
+                <div class="contact-social">
 
-        <h2>About Me</h2>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
 
-        <p>
-            I am an aspiring Data Analyst passionate about
-            working with data, finding patterns and creating
-            meaningful insights.
-        </p>
+                    <a href="#">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
 
-    </section>
+                    <a href="mailto:yourmail@example.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
 
-
-    <section id="skills">
-
-        <h2>Skills</h2>
-
-        <div class="skills-container">
-
-            <div>Excel</div>
-            <div>SQL</div>
-            <div>Python</div>
-            <div>Power BI</div>
-            <div>Data Analysis</div>
-            <div>Data Visualization</div>
-            <div>SOQL</div>
-
-        </div>
-
-    </section>
-
-
-    <section id="projects">
-
-        <h2>Projects</h2>
-
-        <div class="projects-container">
-
-            <div class="project-card">
-
-                <h3>Sales Analysis Dashboard</h3>
-
-                <p>
-                    An interactive Power BI dashboard
-                    analyzing sales performance,
-                    products and regions.
-                </p>
-
-                <p>
-                    <strong>Tools:</strong>
-                    Excel, Power BI
-                </p>
+                </div>
 
             </div>
 
+        </section>
 
-            <div class="project-card">
-
-                <h3>Customer Analysis</h3>
-
-                <p>
-                    SQL-based analysis to understand
-                    customer behavior and purchasing patterns.
-                </p>
-
-                <p>
-                    <strong>Tools:</strong>
-                    SQL, Power BI
-                </p>
-
-            </div>
+    </main>
 
 
-            <div class="project-card">
-
-                <h3>Credit Card Fraud Analysis</h3>
-
-                <p>
-                    Analysis of transaction data to identify
-                    suspicious patterns and potential fraud.
-                </p>
-
-                <p>
-                    <strong>Tools:</strong>
-                    Python, Pandas
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section id="contact">
-
-        <h2>Contact Me</h2>
-
-        <p>
-            Let's connect and discuss data analytics opportunities.
-        </p>
-
-        <p>
-            Email: prasaaad333@gmail.com
-        </p>
-        <p>
-            Phone No: +91 8151030788
-        </p>
-
-    </section>
-
+    <!-- FOOTER -->
 
     <footer>
 
-        <p>
-            © 2026 Prasad. All Rights Reserved.
-        </p>
+        <div class="footer-inner">
+
+            <span>
+                © 2026 Prasad Shetty
+            </span>
+
+            <span>
+                Built with HTML • CSS • JavaScript
+            </span>
+
+            <a href="#home">
+
+                Back to top
+
+                <i class="fa-solid fa-arrow-up"></i>
+
+            </a>
+
+        </div>
 
     </footer>
 
