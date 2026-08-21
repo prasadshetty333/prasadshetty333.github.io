@@ -24,7 +24,7 @@ const typingElement =
 
 const words = [
 
-    "DATA ANALYST",
+    "SOFTWARE SUPPORT SPECIALIST",
     "SQL ENTHUSIAST",
     "POWER BI DEVELOPER",
     "DATA VISUALIZER",
