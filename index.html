@@ -1,889 +1,1496 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Prasad Shetty | Portfolio</title>
-
     <meta name="description"
-        content="Prasad Shetty - Data Analyst portfolio showcasing data analytics, SQL, Python, Power BI and Excel projects.">
+          content="Prasad Shetty - Application Support, Data Analytics, ERP and Software Support Professional">
 
-    <link rel="stylesheet" href="style.css">
+    <title>Prasad Shetty | Application Support & Data Analytics</title>
 
-    <!-- Google Font -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+          rel="stylesheet">
 
-    <!-- Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- LOADING SCREEN -->
+<!-- ================= LOADER ================= -->
 
-    <div class="loader">
+<div class="loader">
+    <div class="loader-mark">PS<span>.</span></div>
+    <div class="loader-bar">
+        <span></span>
+    </div>
+    <p>Loading portfolio...</p>
+</div>
 
-        <div class="loader-content">
+<div class="cursor"></div>
+<div class="cursor-dot"></div>
 
-            <div class="loader-logo">PS</div>
+<div class="grid-bg"></div>
+<div class="glow glow-one"></div>
+<div class="glow glow-two"></div>
 
-            <div class="loader-line">
-                <span></span>
-            </div>
 
-            <p>Loading portfolio...</p>
+<!-- ================= HEADER ================= -->
+
+<header id="header">
+
+    <nav class="nav">
+
+        <a href="#home" class="logo">
+            PS<span>.</span>
+        </a>
+
+        <div class="nav-links">
+
+            <a href="#home" class="nav-link active">Home</a>
+
+            <a href="#about" class="nav-link">About</a>
+
+            <a href="#experience" class="nav-link">
+                Experience
+            </a>
+
+            <a href="#skills" class="nav-link">
+                Skills
+            </a>
+
+            <a href="#projects" class="nav-link">
+                Projects
+            </a>
+
+            <a href="#certifications" class="nav-link">
+                Certification
+            </a>
+
+            <a href="#contact" class="nav-link">
+                Contact
+            </a>
+
+            <a href="Resume/resume.pdf"
+               class="resume-btn"
+               target="_blank">
+
+                Resume
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
 
         </div>
 
-    </div>
+
+        <!-- Mobile Menu Button -->
+
+        <button class="menu-btn"
+                id="menuBtn"
+                aria-label="Open menu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </nav>
 
 
-    <!-- CURSOR -->
-
-    <div class="cursor"></div>
-    <div class="cursor-dot"></div>
-
-
-    <!-- BACKGROUND -->
-
-    <div class="background-grid"></div>
-
-    <div class="glow glow-one"></div>
-    <div class="glow glow-two"></div>
-
-
-    <!-- NAVIGATION -->
-
-    <header id="header">
-
-        <nav>
-
-            <a href="#home" class="logo">
-                PS<span>.</span>
-            </a>
-
-
-            <div class="nav-links">
-
-                <a href="#home" class="nav-link active">Home</a>
-
-                <a href="#about" class="nav-link">About</a>
-
-                <a href="#skills" class="nav-link">Skills</a>
-
-                <a href="#projects" class="nav-link">Projects</a>
-
-                <a href="#contact" class="nav-link">Contact</a>
-
-                <a href="Resume/resume.pdf" class="nav-resume" target="_blank">
-                    Resume
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-
-            </div>
-
-
-            <button class="menu-btn" id="menuBtn">
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </button>
-
-        </nav>
-
-    </header>
-
-
-    <!-- MOBILE MENU -->
+    <!-- Mobile Menu -->
 
     <div class="mobile-menu" id="mobileMenu">
 
         <a href="#home">Home</a>
+
         <a href="#about">About</a>
+
+        <a href="#experience">Experience</a>
+
         <a href="#skills">Skills</a>
+
         <a href="#projects">Projects</a>
+
+        <a href="#certifications">
+            Certification
+        </a>
+
         <a href="#contact">Contact</a>
+
+        <a href="Resume/resume.pdf"
+           target="_blank">
+
+            View Resume
+
+        </a>
 
     </div>
 
+</header>
 
-    <!-- HERO -->
 
-    <main>
 
-        <section class="hero" id="home">
+<!-- ================= MAIN ================= -->
 
-            <div class="hero-content">
+<main>
 
-                <div class="availability reveal">
 
-                    <span class="status-dot"></span>
+<!-- ================= HERO ================= -->
 
-                    Available for opportunities
+<section class="section hero"
+         id="home">
 
-                </div>
+    <div class="hero-copy reveal">
 
+        <div class="availability">
 
-                <p class="hero-small reveal">
-                    HELLO, I'M
-                </p>
+            <span></span>
 
+            Open to opportunities
 
-                <h1 class="hero-title reveal">
+        </div>
 
-                    PRASAD
-                    <span>SHETTY</span>
 
-                </h1>
+        <p class="eyebrow">
+            HELLO, I'M
+        </p>
 
 
-                <div class="hero-role reveal">
+        <h1>
 
-                    <span>I'M A </span>
+            PRASAD
+            <br>
 
-                    <span class="typing" id="typing"></span>
+            <span>SHETTY</span>
 
-                    <span class="cursor-text">|</span>
+        </h1>
 
-                </div>
 
+        <div class="typing-line">
 
-                <p class="hero-description reveal">
+            I'M A
 
-                    I transform raw data into meaningful insights,
-                    interactive dashboards and data-driven decisions.
+            <strong id="typing"></strong>
 
-                </p>
+            <b>|</b>
 
+        </div>
 
-                <div class="hero-buttons reveal">
 
-                    <a href="#projects" class="btn btn-primary">
+        <p class="hero-text">
 
-                        View My Work
+            M.Sc. Computer Science professional combining
+            application support, ERP administration,
+            SQL-based reporting, data analysis and
+            software implementation.
 
-                        <i class="fa-solid fa-arrow-right"></i>
+        </p>
 
-                    </a>
 
+        <div class="hero-actions">
 
-                    <a href="Resume/resume.pdf"
-                        class="btn btn-secondary"
-                        target="_blank">
+            <a href="#experience"
+               class="btn primary">
 
-                        Download Resume
+                Explore My Work
 
-                        <i class="fa-solid fa-download"></i>
-
-                    </a>
-
-                </div>
-
-
-                <!-- SOCIAL -->
-
-                <div class="social-links reveal">
-
-                    <a href="#" aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-
-                    <a href="#" aria-label="GitHub">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-
-                    <a href="mailto:yourmail@example.com" aria-label="Email">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- HERO VISUAL -->
-
-            <div class="hero-visual">
-
-                <div class="orb">
-
-                    <div class="orb-inner">
-
-                        <div class="data-symbol">
-
-                            <span>01</span>
-                            <span>10</span>
-                            <span>01</span>
-                            <span>11</span>
-                            <span>00</span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="floating-card card-one">
-
-                    <i class="fa-solid fa-chart-line"></i>
-
-                    <div>
-                        <strong>Analytics</strong>
-                        <small>Insights</small>
-                    </div>
-
-                </div>
-
-
-                <div class="floating-card card-two">
-
-                    <i class="fa-solid fa-database"></i>
-
-                    <div>
-                        <strong>SQL</strong>
-                        <small>Data</small>
-                    </div>
-
-                </div>
-
-
-                <div class="floating-card card-three">
-
-                    <i class="fa-solid fa-chart-pie"></i>
-
-                    <div>
-                        <strong>Power BI</strong>
-                        <small>Dashboards</small>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <a href="#about" class="scroll-indicator">
-
-                <span>SCROLL TO EXPLORE</span>
-
-                <i class="fa-solid fa-arrow-down"></i>
+                <i class="fa-solid fa-arrow-right"></i>
 
             </a>
 
-        </section>
 
+            <a href="Resume/resume.pdf"
+               class="btn secondary"
+               target="_blank">
 
-        <!-- STATS -->
-
-        <section class="stats">
-
-            <div class="stat reveal">
-
-                <strong data-target="10">0</strong>
-
-                <span>+</span>
-
-                <p>Projects</p>
-
-            </div>
-
-
-            <div class="stat reveal">
-
-                <strong data-target="5">0</strong>
-
-                <span>+</span>
-
-                <p>Analytics Tools</p>
-
-            </div>
-
-
-            <div class="stat reveal">
-
-                <strong data-target="100">0</strong>
-
-                <span>%</span>
-
-                <p>Curiosity</p>
-
-            </div>
-
-
-            <div class="stat reveal">
-
-                <strong data-target="24">0</strong>
-
-                <span>/7</span>
-
-                <p>Learning Mindset</p>
-
-            </div>
-
-        </section>
-
-
-        <!-- ABOUT -->
-
-        <section class="section about" id="about">
-
-            <div class="section-heading reveal">
-
-                <span class="section-number">01</span>
-
-                <p>ABOUT ME</p>
-
-                <h2>
-                    Turning data into
-                    <span>decisions.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="about-grid">
-
-                <div class="about-text reveal">
-
-                    <p class="large-text">
-
-                        I'm a data enthusiast passionate about
-                        discovering the stories hidden inside data.
-
-                    </p>
-
-
-                    <p>
-
-                        My approach combines analytical thinking,
-                        visualization and technology to transform
-                        complex datasets into clear, actionable insights.
-
-                    </p>
-
-
-                    <p>
-
-                        I enjoy working with SQL, Python, Excel and
-                        Power BI to clean, analyze and visualize data
-                        while continuously learning new technologies.
-
-                    </p>
-
-
-                    <a href="#contact" class="text-link">
-
-                        Let's connect
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
-
-                </div>
-
-
-                <div class="about-card reveal">
-
-                    <div class="about-card-top">
-
-                        <span>DATA</span>
-
-                        <i class="fa-solid fa-arrow-trend-up"></i>
-
-                    </div>
-
-
-                    <div class="chart">
-
-                        <div class="bar bar-1"></div>
-                        <div class="bar bar-2"></div>
-                        <div class="bar bar-3"></div>
-                        <div class="bar bar-4"></div>
-                        <div class="bar bar-5"></div>
-                        <div class="bar bar-6"></div>
-                        <div class="bar bar-7"></div>
-
-                    </div>
-
-
-                    <div class="chart-bottom">
-
-                        <span>DATA ANALYTICS</span>
-
-                        <span>↑ 87.4%</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- SKILLS -->
-
-        <section class="section skills" id="skills">
-
-            <div class="section-heading reveal">
-
-                <span class="section-number">02</span>
-
-                <p>EXPERTISE</p>
-
-                <h2>
-                    Tools I use to
-                    <span>analyze.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="skills-grid">
-
-
-                <div class="skill-card reveal">
-
-                    <div class="skill-icon excel">
-                        <i class="fa-solid fa-table-cells"></i>
-                    </div>
-
-                    <h3>Excel</h3>
-
-                    <p>
-                        Data cleaning, formulas, PivotTables,
-                        dashboards and analysis.
-                    </p>
-
-                    <div class="skill-level">
-
-                        <div class="level-bar">
-                            <span style="width: 90%"></span>
-                        </div>
-
-                        <small>Advanced</small>
-
-                    </div>
-
-                </div>
-
-
-                <div class="skill-card reveal">
-
-                    <div class="skill-icon sql">
-                        <i class="fa-solid fa-database"></i>
-                    </div>
-
-                    <h3>SQL</h3>
-
-                    <p>
-                        Queries, joins, aggregations, CTEs,
-                        subqueries and data analysis.
-                    </p>
-
-                    <div class="skill-level">
-
-                        <div class="level-bar">
-                            <span style="width: 85%"></span>
-                        </div>
-
-                        <small>Advanced</small>
-
-                    </div>
-
-                </div>
-
-
-                <div class="skill-card reveal">
-
-                    <div class="skill-icon python">
-                        <i class="fa-brands fa-python"></i>
-                    </div>
-
-                    <h3>Python</h3>
-
-                    <p>
-                        Pandas, NumPy, data cleaning,
-                        analysis and visualization.
-                    </p>
-
-                    <div class="skill-level">
-
-                        <div class="level-bar">
-                            <span style="width: 75%"></span>
-                        </div>
-
-                        <small>Intermediate</small>
-
-                    </div>
-
-                </div>
-
-
-                <div class="skill-card reveal">
-
-                    <div class="skill-icon powerbi">
-                        <i class="fa-solid fa-chart-column"></i>
-                    </div>
-
-                    <h3>Power BI</h3>
-
-                    <p>
-                        Interactive dashboards, DAX,
-                        Power Query and visualization.
-                    </p>
-
-                    <div class="skill-level">
-
-                        <div class="level-bar">
-                            <span style="width: 85%"></span>
-                        </div>
-
-                        <small>Advanced</small>
-
-                    </div>
-
-                </div>
-
-
-                <div class="skill-card reveal">
-
-                    <div class="skill-icon git">
-                        <i class="fa-brands fa-github"></i>
-                    </div>
-
-                    <h3>Git & GitHub</h3>
-
-                    <p>
-                        Version control, repositories,
-                        collaboration and deployment.
-                    </p>
-
-                    <div class="skill-level">
-
-                        <div class="level-bar">
-                            <span style="width: 70%"></span>
-                        </div>
-
-                        <small>Intermediate</small>
-
-                    </div>
-
-                </div>
-
-
-                <div class="skill-card reveal">
-
-                    <div class="skill-icon analytics">
-                        <i class="fa-solid fa-magnifying-glass-chart"></i>
-                    </div>
-
-                    <h3>Data Analytics</h3>
-
-                    <p>
-                        Exploratory analysis, KPIs,
-                        trends and business insights.
-                    </p>
-
-                    <div class="skill-level">
-
-                        <div class="level-bar">
-                            <span style="width: 88%"></span>
-                        </div>
-
-                        <small>Advanced</small>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- PROJECTS -->
-
-        <section class="section projects" id="projects">
-
-            <div class="section-heading reveal">
-
-                <span class="section-number">03</span>
-
-                <p>SELECTED WORK</p>
-
-                <h2>
-                    Things I've
-                    <span>built.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="projects-grid">
-
-
-                <article class="project-card reveal">
-
-                    <div class="project-image dashboard-one">
-
-                        <div class="fake-dashboard">
-
-                            <div class="dashboard-header"></div>
-
-                            <div class="dashboard-content">
-
-                                <div class="dashboard-chart"></div>
-
-                                <div class="dashboard-chart small"></div>
-
-                            </div>
-
-                        </div>
-
-                        <span class="project-number">01</span>
-
-                    </div>
-
-
-                    <div class="project-info">
-
-                        <div class="project-tags">
-
-                            <span>POWER BI</span>
-                            <span>SQL</span>
-
-                        </div>
-
-                        <h3>Business Intelligence Dashboard</h3>
-
-                        <p>
-                            Interactive dashboard designed to
-                            transform business data into actionable
-                            insights.
-                        </p>
-
-                        <a href="#" class="project-link">
-
-                            View project
-
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project-card reveal">
-
-                    <div class="project-image dashboard-two">
-
-                        <div class="fake-dashboard sales">
-
-                            <div class="dashboard-header"></div>
-
-                            <div class="sales-bars">
-
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-
-                            </div>
-
-                        </div>
-
-                        <span class="project-number">02</span>
-
-                    </div>
-
-
-                    <div class="project-info">
-
-                        <div class="project-tags">
-
-                            <span>PYTHON</span>
-                            <span>PANDAS</span>
-
-                        </div>
-
-                        <h3>Sales Data Analysis</h3>
-
-                        <p>
-                            Exploratory data analysis identifying
-                            sales trends, customer behavior and
-                            business opportunities.
-                        </p>
-
-                        <a href="#" class="project-link">
-
-                            View project
-
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project-card reveal">
-
-                    <div class="project-image dashboard-three">
-
-                        <div class="fake-dashboard sql-project">
-
-                            <div class="sql-lines">
-
-                                <span>SELECT *</span>
-                                <span>FROM customers</span>
-                                <span>WHERE revenue</span>
-                                <span>&gt; 100000;</span>
-
-                            </div>
-
-                        </div>
-
-                        <span class="project-number">03</span>
-
-                    </div>
-
-
-                    <div class="project-info">
-
-                        <div class="project-tags">
-
-                            <span>SQL</span>
-                            <span>DATA ANALYSIS</span>
-
-                        </div>
-
-                        <h3>Customer Analytics</h3>
-
-                        <p>
-                            SQL-based analysis of customer behavior,
-                            segmentation and revenue patterns.
-                        </p>
-
-                        <a href="#" class="project-link">
-
-                            View project
-
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- CONTACT -->
-
-        <section class="section contact" id="contact">
-
-            <div class="contact-box reveal">
-
-                <span class="section-number">04</span>
-
-                <p class="contact-label">HAVE A PROJECT?</p>
-
-                <h2>
-                    Let's build something
-                    <span>meaningful.</span>
-                </h2>
-
-                <p class="contact-description">
-
-                    I'm always interested in discussing data,
-                    analytics, projects and new opportunities.
-
-                </p>
-
-
-                <a href="mailto:yourmail@example.com"
-                    class="btn btn-primary contact-btn">
-
-                    Get In Touch
-
-                    <i class="fa-solid fa-paper-plane"></i>
-
-                </a>
-
-
-                <div class="contact-social">
-
-                    <a href="#">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-
-                    <a href="mailto:yourmail@example.com">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-
-    <footer>
-
-        <div class="footer-inner">
-
-            <span>
-                © 2026 Prasad Shetty
-            </span>
-
-            <span>
-                Built with HTML • CSS • JavaScript
-            </span>
-
-            <a href="#home">
-
-                Back to top
-
-                <i class="fa-solid fa-arrow-up"></i>
+                View Resume
 
             </a>
 
         </div>
 
-    </footer>
+
+        <div class="socials">
+
+            <a href="https://www.linkedin.com/in/prasad-shetty0699"
+               target="_blank"
+               aria-label="LinkedIn">
+
+                <i class="fa-brands fa-linkedin-in"></i>
+
+            </a>
 
 
-    <script src="script.js"></script>
+            <a href="https://github.com/prasadshetty333"
+               target="_blank"
+               aria-label="GitHub">
+
+                <i class="fa-brands fa-github"></i>
+
+            </a>
+
+
+            <a href="mailto:prasaaad333@gmail.com"
+               aria-label="Email">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Hero Profile Card -->
+
+    <div class="hero-panel reveal">
+
+        <div class="panel-top">
+
+            <span>PROFILE</span>
+
+            <i class="fa-solid fa-arrow-up-right-dots"></i>
+
+        </div>
+
+
+        <div class="profile-orbit">
+
+            <div class="orbit orbit-a"></div>
+
+            <div class="orbit orbit-b"></div>
+
+            <div class="profile-center">
+
+                PS
+
+            </div>
+
+        </div>
+
+
+        <div class="panel-grid">
+
+            <div>
+
+                <span>FOCUS</span>
+
+                <strong>
+                    Support + Analytics
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>EXPERIENCE</span>
+
+                <strong>
+                    Enterprise Applications
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>DATA</span>
+
+                <strong>
+                    SQL • Excel • SOQL
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>ERP</span>
+
+                <strong>
+                    SAP Business One
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section"
+         id="about">
+
+    <div class="section-heading reveal">
+
+        <span class="section-no">
+            01
+        </span>
+
+        <p>ABOUT ME</p>
+
+        <h2>
+
+            Technology, support
+
+            <br>
+
+            <span>and data.</span>
+
+        </h2>
+
+    </div>
+
+
+    <div class="about-grid">
+
+
+        <div class="about-main reveal">
+
+            <p class="lead">
+
+                I'm an M.Sc. Computer Science graduate
+                with experience across enterprise
+                application support, ERP administration,
+                software implementation and data reporting.
+
+            </p>
+
+
+            <p>
+
+                Currently working as an Executive Software
+                Support professional at MAHE, I handle
+                SLCM administration, technical and
+                functional user support, ticket resolution,
+                vendor coordination, query-based reporting,
+                access management, data verification and
+                Excel-based operational reporting.
+
+            </p>
+
+
+            <p>
+
+                My previous experience includes SAP Business
+                One and POS implementation, SQL/Oracle
+                reporting, integration testing, UAT and
+                post-deployment support, along with
+                full-stack development using Node.js,
+                AngularJS, Express.js and MongoDB.
+
+            </p>
+
+
+            <a href="#contact"
+               class="text-link">
+
+                Let's connect
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <div class="about-cards reveal">
+
+
+            <div class="mini-card">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <div>
+
+                    <b>Application Support</b>
+
+                    <span>
+                        Users • Tickets • Troubleshooting
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="mini-card">
+
+                <i class="fa-solid fa-chart-column"></i>
+
+                <div>
+
+                    <b>Data & Reporting</b>
+
+                    <span>
+                        SQL • Excel • SOQL • Analysis
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="mini-card">
+
+                <i class="fa-solid fa-gears"></i>
+
+                <div>
+
+                    <b>Enterprise Systems</b>
+
+                    <span>
+                        SLCM • SAP B1 • POS
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="mini-card">
+
+                <i class="fa-solid fa-code"></i>
+
+                <div>
+
+                    <b>Development</b>
+
+                    <span>
+                        Node.js • Angular • MongoDB
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section class="section"
+         id="experience">
+
+    <div class="section-heading reveal">
+
+        <span class="section-no">
+            02
+        </span>
+
+        <p>EXPERIENCE</p>
+
+        <h2>
+
+            Where I've
+
+            <br>
+
+            <span>made an impact.</span>
+
+        </h2>
+
+    </div>
+
+
+    <div class="timeline">
+
+
+        <!-- MAHE -->
+
+        <article class="experience-card reveal">
+
+            <div class="exp-date">
+
+                FEB 2026 — PRESENT
+
+            </div>
+
+
+            <div class="exp-body">
+
+                <div class="exp-title-row">
+
+                    <div>
+
+                        <h3>
+                            Executive Software Support
+                        </h3>
+
+                        <p>
+                            Manipal Academy of Higher Education
+                            (MAHE), Bengaluru
+                        </p>
+
+                    </div>
+
+                    <span class="exp-number">
+                        01
+                    </span>
+
+                </div>
+
+
+                <ul>
+
+                    <li>
+                        Work as an SLCM Administrator handling
+                        application support and operational activities.
+                    </li>
+
+                    <li>
+                        Provide technical and functional support
+                        to students and faculty and resolve tickets
+                        within defined timelines.
+                    </li>
+
+                    <li>
+                        Coordinate with software vendors and
+                        technical teams for escalation,
+                        bug tracking and system improvements.
+                    </li>
+
+                    <li>
+                        Use SOQL and query reports for academic
+                        and administrative reporting and data retrieval.
+                    </li>
+
+                    <li>
+                        Handle user accounts, access control,
+                        data verification, Excel reporting,
+                        troubleshooting and application monitoring.
+                    </li>
+
+                </ul>
+
+
+                <div class="tags">
+
+                    <span>SLCM</span>
+
+                    <span>Application Support</span>
+
+                    <span>SOQL</span>
+
+                    <span>Excel</span>
+
+                    <span>Reporting</span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PRAKASH -->
+
+        <article class="experience-card reveal">
+
+            <div class="exp-date">
+
+                AUG 2024 — FEB 2026
+
+            </div>
+
+
+            <div class="exp-body">
+
+                <div class="exp-title-row">
+
+                    <div>
+
+                        <h3>
+                            Executive Software Implementer
+                        </h3>
+
+                        <p>
+                            Prakash Retail Pvt. Ltd.
+                        </p>
+
+                    </div>
+
+                    <span class="exp-number">
+                        02
+                    </span>
+
+                </div>
+
+
+                <ul>
+
+                    <li>
+                        Worked on implementation and functional
+                        support of SAP Business One (SAP B1).
+                    </li>
+
+                    <li>
+                        Contributed to POS implementation with
+                        understanding of end-to-end workflow
+                        and transaction lifecycle.
+                    </li>
+
+                    <li>
+                        Tested and validated integration between
+                        SAP B1, POS and other business applications.
+                    </li>
+
+                    <li>
+                        Worked with SQL queries in Oracle
+                        for reporting and data validation.
+                    </li>
+
+                    <li>
+                        Supported configuration, UAT,
+                        post-deployment activities,
+                        end-user training and Excel
+                        reconciliation reports.
+                    </li>
+
+                </ul>
+
+
+                <div class="tags">
+
+                    <span>SAP B1</span>
+
+                    <span>POS</span>
+
+                    <span>Oracle SQL</span>
+
+                    <span>UAT</span>
+
+                    <span>Excel</span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- CHIPSY -->
+
+        <article class="experience-card reveal">
+
+            <div class="exp-date">
+
+                MAR 2024 — AUG 2024
+
+            </div>
+
+
+            <div class="exp-body">
+
+                <div class="exp-title-row">
+
+                    <div>
+
+                        <h3>
+                            Software Developer Intern
+                        </h3>
+
+                        <p>
+                            Chipsy IT Services Pvt. Ltd.
+                        </p>
+
+                    </div>
+
+                    <span class="exp-number">
+                        03
+                    </span>
+
+                </div>
+
+
+                <ul>
+
+                    <li>
+                        Developed a web-based driving class
+                        booking application using Node.js,
+                        AngularJS, Express.js and MongoDB.
+                    </li>
+
+                    <li>
+                        Designed backend APIs, database
+                        schemas and CRUD operations.
+                    </li>
+
+                    <li>
+                        Implemented frontend components
+                        and integrated them with backend services.
+                    </li>
+
+                    <li>
+                        Worked on authentication, booking
+                        workflows, testing, debugging and deployment.
+                    </li>
+
+                </ul>
+
+
+                <div class="tags">
+
+                    <span>Node.js</span>
+
+                    <span>AngularJS</span>
+
+                    <span>Express.js</span>
+
+                    <span>MongoDB</span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SKILLS ================= -->
+
+<section class="section"
+         id="skills">
+
+    <div class="section-heading reveal">
+
+        <span class="section-no">
+            03
+        </span>
+
+        <p>TECHNICAL SKILLS</p>
+
+        <h2>
+
+            A practical mix of
+
+            <br>
+
+            <span>technology & analysis.</span>
+
+        </h2>
+
+    </div>
+
+
+    <div class="skill-grid">
+
+
+        <div class="skill-card reveal">
+
+            <div class="skill-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+
+            <h3>
+                Application Support
+            </h3>
+
+            <p>
+                Application troubleshooting,
+                user support, ticket resolution,
+                system administration, monitoring,
+                documentation and stakeholder coordination.
+            </p>
+
+            <div class="tags">
+
+                <span>Support</span>
+
+                <span>Troubleshooting</span>
+
+                <span>UAT</span>
+
+                <span>Testing</span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="skill-card reveal">
+
+            <div class="skill-icon">
+                <i class="fa-solid fa-database"></i>
+            </div>
+
+            <h3>
+                Data & Databases
+            </h3>
+
+            <p>
+                Query-based reporting,
+                data validation, operational
+                analysis and database handling.
+            </p>
+
+            <div class="tags">
+
+                <span>SQL</span>
+
+                <span>SOQL</span>
+
+                <span>Oracle</span>
+
+                <span>Excel</span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="skill-card reveal">
+
+            <div class="skill-icon">
+                <i class="fa-solid fa-building"></i>
+            </div>
+
+            <h3>
+                ERP & Integration
+            </h3>
+
+            <p>
+                Functional support and implementation
+                across enterprise applications and
+                connected business systems.
+            </p>
+
+            <div class="tags">
+
+                <span>SAP B1</span>
+
+                <span>POS</span>
+
+                <span>Integration</span>
+
+                <span>UAT</span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="skill-card reveal">
+
+            <div class="skill-icon">
+                <i class="fa-solid fa-code"></i>
+            </div>
+
+            <h3>
+                Web Development
+            </h3>
+
+            <p>
+                Full-stack development experience from
+                frontend components to APIs, database
+                schemas and CRUD workflows.
+            </p>
+
+            <div class="tags">
+
+                <span>Node.js</span>
+
+                <span>AngularJS</span>
+
+                <span>Express.js</span>
+
+                <span>MongoDB</span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="skill-card reveal">
+
+            <div class="skill-icon">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+
+            <h3>
+                Data Analytics
+            </h3>
+
+            <p>
+                Data analytics foundations developed
+                through IBM/Coursera coursework and
+                practical reporting experience.
+            </p>
+
+            <div class="tags">
+
+                <span>Data Analysis</span>
+
+                <span>Data Wrangling</span>
+
+                <span>Visualization</span>
+
+                <span>Dashboards</span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="skill-card reveal">
+
+            <div class="skill-icon">
+                <i class="fa-solid fa-file-excel"></i>
+            </div>
+
+            <h3>
+                Reporting & Productivity
+            </h3>
+
+            <p>
+                Excel-based reporting, reconciliation,
+                operational tracking and management reporting.
+            </p>
+
+            <div class="tags">
+
+                <span>Microsoft Excel</span>
+
+                <span>Reporting</span>
+
+                <span>Reconciliation</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section class="section"
+         id="projects">
+
+    <div class="section-heading reveal">
+
+        <span class="section-no">
+            04
+        </span>
+
+        <p>PROJECTS</p>
+
+        <h2>
+
+            Selected work &
+
+            <br>
+
+            <span>technical projects.</span>
+
+        </h2>
+
+    </div>
+
+
+    <div class="project-grid">
+
+
+        <article class="project-card featured reveal">
+
+            <div class="project-top">
+
+                <span>
+                    01 / ENTERPRISE
+                </span>
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </div>
+
+
+            <div class="project-icon">
+
+                <i class="fa-solid fa-arrows-rotate"></i>
+
+            </div>
+
+
+            <h3>
+                Enterprise Application & POS Integration
+            </h3>
+
+
+            <p>
+
+                Supported SAP B1 implementation and POS
+                integration, including configuration,
+                integration testing, data validation
+                and UAT activities to support accurate
+                system synchronization.
+
+            </p>
+
+
+            <div class="tags">
+
+                <span>SAP B1</span>
+
+                <span>POS</span>
+
+                <span>Integration</span>
+
+                <span>UAT</span>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="project-card reveal">
+
+            <div class="project-top">
+
+                <span>
+                    02 / FULL STACK
+                </span>
+
+                <i class="fa-solid fa-code"></i>
+
+            </div>
+
+
+            <div class="project-icon">
+
+                <i class="fa-solid fa-car-side"></i>
+
+            </div>
+
+
+            <h3>
+                DriveEase
+            </h3>
+
+
+            <p>
+
+                Full-stack driving class booking website
+                with authentication, instructor selection,
+                booking workflow and admin features using
+                Node.js, Angular, Express.js and MongoDB.
+
+            </p>
+
+
+            <div class="tags">
+
+                <span>Node.js</span>
+
+                <span>Angular</span>
+
+                <span>MongoDB</span>
+
+                <span>Express.js</span>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="project-card reveal">
+
+            <div class="project-top">
+
+                <span>
+                    03 / IOT
+                </span>
+
+                <i class="fa-solid fa-microchip"></i>
+
+            </div>
+
+
+            <div class="project-icon">
+
+                <i class="fa-solid fa-seedling"></i>
+
+            </div>
+
+
+            <h3>
+                Plant Watering System using IoT
+            </h3>
+
+
+            <p>
+
+                Automated plant watering system using
+                IoT sensors and microcontrollers for
+                real-time soil monitoring and controlled
+                irrigation.
+
+            </p>
+
+
+            <div class="tags">
+
+                <span>IoT</span>
+
+                <span>Sensors</span>
+
+                <span>Automation</span>
+
+                <span>Monitoring</span>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CERTIFICATION ================= -->
+
+<section class="section"
+         id="certifications">
+
+    <div class="section-heading reveal">
+
+        <span class="section-no">
+            05
+        </span>
+
+        <p>CERTIFICATION</p>
+
+        <h2>
+
+            Learning that
+
+            <br>
+
+            <span>keeps moving.</span>
+
+        </h2>
+
+    </div>
+
+
+    <div class="certificate-card reveal">
+
+
+        <div class="certificate-image-wrap">
+
+            <img src="assets/Data Analytics Certificate.jpg"
+                 alt="IBM Introduction to Data Analytics certificate">
+
+        </div>
+
+
+        <div class="certificate-content">
+
+            <div class="cert-brand">
+
+                <span>IBM</span>
+
+                <em>×</em>
+
+                <span>COURSERA</span>
+
+            </div>
+
+
+            <p class="cert-label">
+
+                COURSE CERTIFICATE • AUG 10, 2026
+
+            </p>
+
+
+            <h3>
+                Introduction to Data Analytics
+            </h3>
+
+
+            <p>
+
+                Online course authorized by IBM and
+                offered through Coursera.
+
+                The course covers the data analytics
+                process, data roles, data structures,
+                data sources, data collection,
+                wrangling, mining and visualization.
+
+            </p>
+
+
+            <div class="tags">
+
+                <span>Data Analytics</span>
+
+                <span>Data Wrangling</span>
+
+                <span>Data Visualization</span>
+
+                <span>Data Analysis</span>
+
+            </div>
+
+
+            <a href="https://coursera.org/verify/R4GKBS15YRS"
+               class="btn primary small"
+               target="_blank">
+
+                Verify Certificate
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+
+            <p class="verify-note">
+
+                Verification ID:
+                R4GKBS15YRS
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section class="section"
+         id="education">
+
+    <div class="section-heading reveal">
+
+        <span class="section-no">
+            06
+        </span>
+
+        <p>EDUCATION</p>
+
+        <h2>
+
+            Academic
+
+            <br>
+
+            <span>foundation.</span>
+
+        </h2>
+
+    </div>
+
+
+    <div class="education-grid">
+
+
+        <div class="education-card reveal">
+
+            <span>
+                2022 — 2024
+            </span>
+
+            <h3>
+                M.Sc. Computer Science
+            </h3>
+
+            <p>
+                MGM College, Udupi
+            </p>
+
+            <strong>
+                CGPA 8.42
+            </strong>
+
+        </div>
+
+
+
+        <div class="education-card reveal">
+
+            <span>
+                2019 — 2022
+            </span>
+
+            <h3>
+                B.Sc. Mathematics,
+                Statistics & Computer Science
+            </h3>
+
+            <p>
+                MGM College, Udupi
+            </p>
+
+            <strong>
+                CGPA 7.91
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="section contact-section"
+         id="contact">
+
+    <div class="contact-box reveal">
+
+        <p class="eyebrow">
+            LET'S CONNECT
+        </p>
+
+
+        <h2>
+
+            Open to the right
+
+            <br>
+
+            <span>opportunity.</span>
+
+        </h2>
+
+
+        <p>
+
+            Interested in application support,
+            software support, ERP, reporting,
+            SQL/data analytics and related
+            technology roles.
+
+        </p>
+
+
+        <div class="contact-actions">
+
+
+            <a href="mailto:prasaaad333@gmail.com"
+               class="btn primary">
+
+                Email Me
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </a>
+
+
+            <a href="https://www.linkedin.com/in/prasad-shetty0699"
+               class="btn secondary"
+               target="_blank">
+
+                LinkedIn
+
+                <i class="fa-brands fa-linkedin-in"></i>
+
+            </a>
+
+        </div>
+
+
+        <div class="contact-details">
+
+            <span>
+
+                <i class="fa-solid fa-envelope"></i>
+
+                prasaaad333@gmail.com
+
+            </span>
+
+
+            <span>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Udupi, Karnataka, India
+
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <span>
+        © 2026 Prasad Shetty
+    </span>
+
+    <span>
+        Built with HTML • CSS • JavaScript
+    </span>
+
+    <a href="#home">
+
+        Back to top
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </a>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
