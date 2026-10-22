@@ -22,6 +22,8 @@ const typingEl =
 
 const roles = [
 
+    "Salesforce & SOQL Support",
+
     "Application Support Professional",
 
     "Data Analytics Enthusiast",
