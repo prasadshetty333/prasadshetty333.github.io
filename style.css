@@ -2468,3 +2468,30 @@ section {
         min-width: 190px !important;
     }
 }
+
+/* Mobile Navigation Fix */
+@media (max-width: 768px) {
+
+    .menu-toggle,
+    .hamburger,
+    .nav-toggle {
+        position: relative !important;
+        z-index: 10001 !important;
+        background: #0b1220 !important;
+        color: #ffffff !important;
+        cursor: pointer;
+    }
+
+    nav,
+    .navbar,
+    .nav-menu {
+        position: relative;
+        z-index: 10000 !important;
+    }
+
+    #red-particle-container {
+        z-index: 0 !important;
+        pointer-events: none !important;
+    }
+
+}
