@@ -1,165 +1,112 @@
-/* =========================================================
-   LOADER
-========================================================= */
+/* ================= LOADER ================= */
+
+const loader = document.querySelector(".loader");
 
 window.addEventListener("load", () => {
 
     setTimeout(() => {
 
-        document
-            .querySelector(".loader")
-            .classList.add("hide");
+        loader.classList.add("hide");
 
-    }, 1000);
+    }, 500);
 
 });
 
 
-/* =========================================================
-   TYPEWRITER
-========================================================= */
 
-const typingElement =
+/* ================= TYPING EFFECT ================= */
+
+const typingEl =
     document.getElementById("typing");
 
-const words = [
 
-    "DATA ANALYST",
-    "SQL ENTHUSIAST",
-    "POWER BI DEVELOPER",
-    "DATA VISUALIZER",
-    "PROBLEM SOLVER"
+const roles = [
+
+    "Salesforce & SOQL Support",
+
+    "Application Support Professional",
+
+    "Data Analytics Enthusiast",
+
+    "SQL & Reporting Professional",
+
+    "ERP & Software Support",
+
+    "Software Support Specialist"
 
 ];
 
-let wordIndex = 0;
-let characterIndex = 0;
+
+let roleIndex = 0;
+
+let charIndex = 0;
+
 let deleting = false;
 
 
-function typeEffect() {
+function typeRole() {
 
-    const currentWord =
-        words[wordIndex];
-
-
-    if (!deleting) {
-
-        typingElement.textContent =
-            currentWord.substring(
-                0,
-                characterIndex + 1
-            );
-
-        characterIndex++;
+    const word =
+        roles[roleIndex];
 
 
-        if (
-            characterIndex ===
-            currentWord.length
-        ) {
+    if (deleting) {
 
-            deleting = true;
-
-            setTimeout(
-                typeEffect,
-                1500
-            );
-
-            return;
-
-        }
+        charIndex--;
 
     } else {
 
-        typingElement.textContent =
-            currentWord.substring(
-                0,
-                characterIndex - 1
-            );
-
-        characterIndex--;
-
-
-        if (characterIndex === 0) {
-
-            deleting = false;
-
-            wordIndex =
-                (wordIndex + 1) %
-                words.length;
-
-        }
+        charIndex++;
 
     }
 
 
-    setTimeout(
-        typeEffect,
-        deleting ? 45 : 90
-    );
+    typingEl.textContent =
+        word.slice(0, charIndex);
+
+
+    let delay =
+        deleting ? 35 : 70;
+
+
+    if (
+        !deleting &&
+        charIndex === word.length
+    ) {
+
+        delay = 1500;
+
+        deleting = true;
+
+    }
+
+
+    else if (
+        deleting &&
+        charIndex === 0
+    ) {
+
+        deleting = false;
+
+        roleIndex =
+            (roleIndex + 1)
+            % roles.length;
+
+        delay = 350;
+
+    }
+
+
+    setTimeout(typeRole, delay);
 
 }
 
 
-typeEffect();
+typeRole();
 
 
-/* =========================================================
-   SCROLL REVEAL
-========================================================= */
 
-const revealElements =
-    document.querySelectorAll(".reveal");
-
-
-const revealObserver =
-    new IntersectionObserver(
-
-        (entries) => {
-
-            entries.forEach(
-                (entry) => {
-
-                    if (
-                        entry.isIntersecting
-                    ) {
-
-                        entry.target
-                            .classList
-                            .add("visible");
-
-                        revealObserver
-                            .unobserve(
-                                entry.target
-                            );
-
-                    }
-
-                }
-            );
-
-        },
-
-        {
-            threshold: 0.12
-        }
-
-    );
-
-
-revealElements.forEach(
-    element => {
-
-        revealObserver.observe(element);
-
-    }
-);
-
-
-/* =========================================================
-   NAVIGATION SCROLL EFFECT
-========================================================= */
+/* ================= HEADER SCROLL ================= */
 
 const header =
     document.getElementById("header");
@@ -169,110 +116,24 @@ window.addEventListener(
     "scroll",
     () => {
 
-        if (window.scrollY > 50) {
-
-            header.classList.add(
-                "scrolled"
-            );
-
-        } else {
-
-            header.classList.remove(
-                "scrolled"
-            );
-
-        }
-
-    }
-);
-
-
-/* =========================================================
-   ACTIVE NAVIGATION
-========================================================= */
-
-const sections =
-    document.querySelectorAll(
-        "section[id]"
-    );
-
-
-const navLinks =
-    document.querySelectorAll(
-        ".nav-link"
-    );
-
-
-window.addEventListener(
-    "scroll",
-    () => {
-
-        let current = "";
-
-
-        sections.forEach(
-            section => {
-
-                const sectionTop =
-                    section.offsetTop - 200;
-
-                if (
-                    window.scrollY >=
-                    sectionTop
-                ) {
-
-                    current =
-                        section.getAttribute(
-                            "id"
-                        );
-
-                }
-
-            }
-        );
-
-
-        navLinks.forEach(
-            link => {
-
-                link.classList.remove(
-                    "active"
-                );
-
-
-                if (
-                    link.getAttribute(
-                        "href"
-                    ) === `#${current}`
-                ) {
-
-                    link.classList.add(
-                        "active"
-                    );
-
-                }
-
-            }
+        header.classList.toggle(
+            "scrolled",
+            window.scrollY > 30
         );
 
     }
 );
 
 
-/* =========================================================
-   MOBILE MENU
-========================================================= */
+
+/* ================= MOBILE MENU ================= */
 
 const menuBtn =
-    document.getElementById(
-        "menuBtn"
-    );
+    document.getElementById("menuBtn");
 
 
 const mobileMenu =
-    document.getElementById(
-        "mobileMenu"
-    );
+    document.getElementById("mobileMenu");
 
 
 menuBtn.addEventListener(
@@ -289,342 +150,230 @@ menuBtn.addEventListener(
 
 mobileMenu
     .querySelectorAll("a")
-    .forEach(
-        link => {
+    .forEach(link => {
 
-            link.addEventListener(
-                "click",
-                () => {
+        link.addEventListener(
+            "click",
+            () => {
 
-                    mobileMenu
-                        .classList
-                        .remove(
-                            "open"
-                        );
+                mobileMenu.classList.remove(
+                    "open"
+                );
 
-                }
-            );
+            }
+        );
 
-        }
-    );
+    });
 
 
-/* =========================================================
-   ANIMATED STATISTICS
-========================================================= */
 
-const statNumbers =
-    document.querySelectorAll(
-        "[data-target]"
-    );
+/* ================= SCROLL REVEAL ================= */
+
+const reveals =
+    document.querySelectorAll(".reveal");
 
 
-const statObserver =
+const observer =
     new IntersectionObserver(
 
         entries => {
 
-            entries.forEach(
-                entry => {
+            entries.forEach(entry => {
 
-                    if (
-                        entry.isIntersecting
-                    ) {
+                if (
+                    entry.isIntersecting
+                ) {
 
-                        const element =
-                            entry.target;
-
-                        const target =
-                            Number(
-                                element.dataset
-                                    .target
-                            );
-
-                        let count = 0;
-
-                        const increment =
-                            target / 50;
+                    entry.target
+                        .classList
+                        .add("visible");
 
 
-                        function update() {
-
-                            count +=
-                                increment;
-
-
-                            if (
-                                count <
-                                target
-                            ) {
-
-                                element.textContent =
-                                    Math.floor(
-                                        count
-                                    );
-
-                                requestAnimationFrame(
-                                    update
-                                );
-
-                            } else {
-
-                                element.textContent =
-                                    target;
-
-                            }
-
-                        }
-
-
-                        update();
-
-                        statObserver
-                            .unobserve(
-                                element
-                            );
-
-                    }
+                    observer.unobserve(
+                        entry.target
+                    );
 
                 }
-            );
+
+            });
 
         },
 
         {
-            threshold: .8
+            threshold: 0.12
         }
 
     );
 
 
-statNumbers.forEach(
-    number => {
+reveals.forEach(element => {
 
-        statObserver.observe(
-            number
-        );
+    observer.observe(element);
 
-    }
-);
+});
 
 
-/* =========================================================
-   MOUSE CURSOR
-========================================================= */
+
+/* ================= ACTIVE NAV ================= */
+
+const sections =
+    document.querySelectorAll(
+        "main section[id]"
+    );
+
+
+const navLinks =
+    document.querySelectorAll(
+        ".nav-link"
+    );
+
+
+const sectionObserver =
+    new IntersectionObserver(
+
+        entries => {
+
+            entries.forEach(entry => {
+
+                if (
+                    entry.isIntersecting
+                ) {
+
+                    navLinks.forEach(
+                        link => {
+
+                            link.classList.toggle(
+
+                                "active",
+
+                                link.getAttribute(
+                                    "href"
+                                ) ===
+                                "#" +
+                                entry.target.id
+
+                            );
+
+                        }
+                    );
+
+                }
+
+            });
+
+        },
+
+        {
+            rootMargin:
+                "-35% 0px -55% 0px"
+        }
+
+    );
+
+
+sections.forEach(section => {
+
+    sectionObserver.observe(
+        section
+    );
+
+});
+
+
+
+/* ================= CUSTOM CURSOR ================= */
 
 const cursor =
-    document.querySelector(
-        ".cursor"
-    );
+    document.querySelector(".cursor");
 
 
 const cursorDot =
-    document.querySelector(
-        ".cursor-dot"
-    );
+    document.querySelector(".cursor-dot");
 
 
-let mouseX = 0;
-let mouseY = 0;
+if (
+    cursor &&
+    cursorDot
+) {
 
-let cursorX = 0;
-let cursorY = 0;
+    window.addEventListener(
+        "mousemove",
+        event => {
 
+            cursor.style.left =
+                event.clientX + "px";
 
-document.addEventListener(
-    "mousemove",
-    event => {
-
-        mouseX = event.clientX;
-        mouseY = event.clientY;
-
-
-        cursorDot.style.left =
-            `${mouseX}px`;
-
-        cursorDot.style.top =
-            `${mouseY}px`;
-
-    }
-);
+            cursor.style.top =
+                event.clientY + "px";
 
 
-function animateCursor() {
+            cursorDot.style.left =
+                event.clientX + "px";
 
-    cursorX +=
-        (mouseX - cursorX) * .15;
+            cursorDot.style.top =
+                event.clientY + "px";
 
-    cursorY +=
-        (mouseY - cursorY) * .15;
-
-
-    cursor.style.left =
-        `${cursorX}px`;
-
-    cursor.style.top =
-        `${cursorY}px`;
-
-
-    requestAnimationFrame(
-        animateCursor
+        }
     );
 
 }
 
+/* ================= BLUE NEON PARALLAX ================= */
 
-animateCursor();
-
-
-/* =========================================================
-   CURSOR HOVER
-========================================================= */
-
-const hoverElements =
-    document.querySelectorAll(
-        "a, button, .skill-card, .project-card"
-    );
-
-
-hoverElements.forEach(
-    element => {
-
-        element.addEventListener(
-            "mouseenter",
-            () => {
-
-                document.body
-                    .classList
-                    .add("hovering");
-
-            }
-        );
-
-
-        element.addEventListener(
-            "mouseleave",
-            () => {
-
-                document.body
-                    .classList
-                    .remove("hovering");
-
-            }
-        );
-
-    }
+const parallaxElements = document.querySelectorAll(
+    ".glow-one, .glow-two, .grid-bg, .hero-panel"
 );
 
+const finePointer = window.matchMedia("(pointer: fine)");
 
-/* =========================================================
-   PROJECT CARD TILT
-========================================================= */
+if (finePointer.matches) {
 
-const projectCards =
-    document.querySelectorAll(
-        ".project-card"
-    );
+    window.addEventListener("mousemove", (event) => {
 
+        const x = (event.clientX / window.innerWidth - 0.5) * 35;
+        const y = (event.clientY / window.innerHeight - 0.5) * 35;
 
-projectCards.forEach(
-    card => {
+        parallaxElements.forEach(element => {
+            element.style.setProperty("--parallax-x", `${x}px`);
+            element.style.setProperty("--parallax-y", `${y}px`);
+        });
 
-        card.addEventListener(
-            "mousemove",
-            event => {
+    });
 
-                const rect =
-                    card.getBoundingClientRect();
+    document.addEventListener("mouseleave", () => {
 
+        parallaxElements.forEach(element => {
+            element.style.setProperty("--parallax-x", "0px");
+            element.style.setProperty("--parallax-y", "0px");
+        });
 
-                const x =
-                    event.clientX -
-                    rect.left;
+    });
 
+}
 
-                const y =
-                    event.clientY -
-                    rect.top;
+/* Floating Red Background Particles */
+document.addEventListener("DOMContentLoaded", function () {
 
+    const particleContainer = document.createElement("div");
+    particleContainer.id = "red-particle-container";
 
-                const centerX =
-                    rect.width / 2;
+    particleContainer.style.position = "fixed";
+    particleContainer.style.inset = "0";
+    particleContainer.style.pointerEvents = "none";
+    particleContainer.style.zIndex = "0";
+    particleContainer.style.overflow = "hidden";
 
+    document.body.prepend(particleContainer);
 
-                const centerY =
-                    rect.height / 2;
+    for (let i = 0; i < 45; i++) {
+        const particle = document.createElement("span");
+        particle.className = "red-particle";
 
-
-                const rotateX =
-                    (y - centerY) / 25;
-
-
-                const rotateY =
-                    (centerX - x) / 25;
-
-
-                card.style.transform =
-                    `perspective(900px)
-                     rotateX(${rotateX}deg)
-                     rotateY(${rotateY}deg)
-                     translateY(-8px)`;
-
-            }
-        );
-
-
-        card.addEventListener(
-            "mouseleave",
-            () => {
-
-                card.style.transform =
-                    "";
-
-            }
-        );
-
+        particle.style.left = Math.random() * 100 + "vw";
+        particle.style.top = Math.random() * 100 + "vh";
+        particle.style.animationDuration = (18 + Math.random() * 15) + "s";
+        particle.style.animationDelay = -(Math.random() * 15) + "s";
+        particleContainer.appendChild(particle);
     }
-);
 
-
-/* =========================================================
-   SMOOTH INTERNAL LINKS
-========================================================= */
-
-document
-    .querySelectorAll(
-        'a[href^="#"]'
-    )
-    .forEach(
-        anchor => {
-
-            anchor.addEventListener(
-                "click",
-                function(event) {
-
-                    const target =
-                        document.querySelector(
-                            this.getAttribute(
-                                "href"
-                            )
-                        );
-
-
-                    if (target) {
-
-                        event.preventDefault();
-
-
-                        target.scrollIntoView(
-                            {
-                                behavior:
-                                    "smooth"
-                            }
-                        );
-
-                    }
-
-                }
-            );
-
-        }
-    );
+});
